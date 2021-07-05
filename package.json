@@ -1,6 +1,6 @@
 {
   "name": "@talview/passport-saml",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.1",
   "description": "SAML 2.0 authentication strategy for Passport",
   "keywords": [
     "saml",
@@ -10,8 +10,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/talview/passport-saml.git"
+    "url": "git+https://github.com/talview/passport-saml.git"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "author": "engineering@talview.com",
   "license": "MIT",
   "main": "./lib/passport-saml",
   "files": [
