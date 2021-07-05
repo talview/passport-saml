@@ -1,6 +1,6 @@
 {
-  "name": "passport-saml",
-  "version": "3.0.0",
+  "name": "@talview/passport-saml",
+  "version": "1.0.0",
   "description": "SAML 2.0 authentication strategy for Passport",
   "keywords": [
     "saml",
@@ -10,22 +10,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/node-saml/passport-saml.git"
+    "url": "https://github.com/talview/passport-saml.git"
   },
   "license": "MIT",
-  "author": {
-    "name": "Henri Bergius",
-    "email": "henri.bergius@iki.fi",
-    "url": "http://bergie.iki.fi"
-  },
-  "contributors": [
-    "Michael Bosworth",
-    "Herbert Vojčík",
-    "Peter Loer",
-    "Mark Stosberg",
-    "Chris Barth",
-    "Andrii Kostenko"
-  ],
   "main": "./lib/passport-saml",
   "files": [
     "lib",
@@ -53,7 +40,7 @@
     "debug": "^4.3.1",
     "node-saml": "^4.0.0-beta.0",
     "passport-strategy": "^1.0.0",
-    "@talview/xml-crypto": "^1.0.0",
+    "@talview/xml-crypto": "^1.0.0-alpha.2",
     "xml-encryption": "^1.2.4",
     "xml2js": "^0.4.23",
     "xmlbuilder": "^15.1.1",
