@@ -15,9 +15,8 @@ jobs:
         registry-url: 'https://npm.pkg.github.com'
         # Defaults to the user or organization that owns the workflow file
         scope: '@talview'
+        build_args: NODE_AUTH_TOKEN=${{ secrets.NPM_PKG_INSTALL_TOKEN }}
     - run: npm install
-      env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_PKG_INSTALL_TOKEN }}
     - run: |
         export version=$(echo "${{ github.ref }}" | cut -d "/" -f 3)
         echo $version
